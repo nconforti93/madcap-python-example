@@ -1,5 +1,6 @@
 import api
 import flare
+import secrets
 
 import pandas as pd
 import os
@@ -40,10 +41,8 @@ TOCs = [f'{toc_dir}\Africa.fltoc',
         f'{toc_dir}\SouthAmerica.fltoc']
 
 
-
-
-
 if __name__ == "__main__":
+
 
     print(f"Requesting data for top {number_of_cities} cities")
     # Get list of 100 most populous cities using Geonames API
@@ -73,7 +72,7 @@ if __name__ == "__main__":
         print(f"Getting weather data for {row['ascii_name']}")
         #Connect to weather api now
         weather_parameters = {
-            'appid': '303da0e4dac77ecd29507a0a0d9f886a',
+            'appid': secrets.openweather_api_key,
             'exclude': 'minutely',
             'lat': row['latitude'],
             'lon': row['longitude'],
