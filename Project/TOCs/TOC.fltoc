@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Home"
+    Link="/Content/Home.htm"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="Africa">
+    <TocEntry
+      Title="Africa"
+      Link="/Project/TOCs/Generated_TOCs/Africa.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+  <TocEntry
+    Title="Asia">
+    <TocEntry
+      Title="Asia"
+      Link="/Project/TOCs/Generated_TOCs/Asia.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+  <TocEntry
+    Title="Europe">
+    <TocEntry
+      Title="Europe"
+      Link="/Project/TOCs/Generated_TOCs/Europe.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+  <TocEntry
+    Title="North America">
+    <TocEntry
+      Title="NorthAmerica"
+      Link="/Project/TOCs/Generated_TOCs/NorthAmerica.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+  <TocEntry
+    Title="Oceania">
+    <TocEntry
+      Title="Oceania"
+      Link="/Project/TOCs/Generated_TOCs/Oceania.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+  <TocEntry
+    Title="South America">
+    <TocEntry
+      Title="SouthAmerica"
+      Link="/Project/TOCs/Generated_TOCs/SouthAmerica.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+</CatapultToc>

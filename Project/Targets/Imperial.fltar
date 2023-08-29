@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="MadCap HTML5 Target"
+  Type="WebHelp2"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterPage="/Content/Resources/TemplatePages/Other-Topics.flmsp"
+  DefaultUrl="/Content/Home.htm"
+  ShowMadCapBacklink="true"
+  MasterToc="/Project/TOCs/TOC.fltoc"
+  ConditionTagExpression="include[Units.Imperial], exclude[Units.Metric]">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <PreBuild>python3 $(ProjectDirectory)\Automation\main.py</PreBuild>
+</CatapultTarget>

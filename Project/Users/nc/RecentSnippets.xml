@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UrlList>
+    <Url Source="Resources/Snippets/Africa.flsnp" />
+    <Url Source="Resources/Snippets/Asia.flsnp" />
+    <Url Source="Resources/Snippets/Europe.flsnp" />
+    <Url Source="Resources/Snippets/NorthAmerica.flsnp" />
+    <Url Source="Resources/Snippets/Oceania.flsnp" />
+    <Url Source="Resources/Snippets/SouthAmerica.flsnp" />
+</UrlList>

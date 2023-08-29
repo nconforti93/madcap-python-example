@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ObjectList>
+    <Object Value="Heading.Level1" />
+    <Object Value="System.LongDate" />
+    <Object Value="System.LongTime" />
+    <Object Value="System.LinkedTitle" />
+</ObjectList>

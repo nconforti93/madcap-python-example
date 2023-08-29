@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UrlList>
+    <Url Source="Resources/Images/weather_icons/02d.png" />
+    <Url Source="Resources/Images/weather_icons/01d.png" />
+    <Url Source="Resources/Images/south_america_globe.png" />
+    <Url Source="Resources/Images/Oceania_globe.png" />
+    <Url Source="Resources/Images/north_america_globe.png" />
+    <Url Source="Resources/Images/europe_globe.png" />
+    <Url Source="Resources/Images/asia_globe.png" />
+    <Url Source="Resources/Images/africa_globe.png" />
+</UrlList>

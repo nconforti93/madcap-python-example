@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Comment=""
+    Name="Metric"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Imperial"
+    Comment="" />
+</CatapultConditionTagSet>
