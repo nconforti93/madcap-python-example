@@ -528,3 +528,10 @@ img.icon_big
 	
 }
 
+img.home_icon
+{
+	max-width: 200px;
+	margin: auto;
+	display: block;
+}
+

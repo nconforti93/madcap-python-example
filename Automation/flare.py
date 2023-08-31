@@ -71,6 +71,14 @@ def create_file(path_to_file, type_of_file, title):
     # Insert this text into the newly-created file
     insert_into_file(path_to_file,file_start_text)
 
+# Function number_is_even
+# Input
+#   num - the number to check if it is even or not
+# Output
+#   Boolean whether the number is even or not
+# Purpose
+#   For some tables with alternating row colors, even and odd rows have different style classes. This function can be
+#   used to determine quickly if a number if even or odd and add the appropriate style (in a different function)
 def number_is_even(num):
     if num % 2 == 0:
         return True
@@ -95,7 +103,6 @@ def add_entry_to_toc(toc_soup_object, folder_name, topic_name):
         toc_props = {}
         toc_props['Title'] = f'{topic_name}'
         toc_props['Link'] = f'/Content/{folder_name}/{topic_name}.htm'
-        #toc_props['Class'] = 'hidden'
 
         # Create new TocEntry tag with the above properties
         new_toc_entry = toc_soup_object.new_tag('TocEntry', **toc_props)
@@ -104,9 +111,17 @@ def add_entry_to_toc(toc_soup_object, folder_name, topic_name):
         entry.append(new_toc_entry)
     return toc_soup_object
 
+# Function create_table
+# Input
+#   args - a variable amount of headers for the table corresponding to the number of columns
+# Output
+#   new_tab - a soup object containing a new table
+# Purpose
+#   This function will set up a blank table with the given args as the header for the table
+#   The classes and styles used are hard-coded, but these could be variable as well
 def create_table(*args):
 
-    # Set any table attributes, if any are needed. For this script, none are needed
+    # Set any table attributes, if any are needed.
     table_attributes = {}
     table_attributes['style'] = "mc-table-style: url('../Resources/TableStyles/Alternate-Row-Color.css');"
     table_attributes['class'] = 'TableStyle-Alternate-Row-Color'
@@ -152,7 +167,7 @@ def create_table(*args):
 # Function insert_row_into_table
 # Input
     # table - soup object containing the table you are inserting
-    # even - a boolean for if the row is even or odd. Some tables have different, alternating styles for rows. In our case, it doesn't matter
+    # even - a boolean for if the row is even or odd. Some tables have different, alternating styles for rows.
     # args - data to be inserted into the table
 # Output - Table - overwritten soup object containing a table with the newly added row
 # Purpose
@@ -186,6 +201,14 @@ def insert_row_into_table(table, even, *args):
     # return the table with the new row
     return table
 
+# Function create_code_snippet
+# Input
+#   code_example - the text that should be in the code snippet
+#   language - the programming language of the code snippet. Flare uses this for syntax highlighting
+# Output
+#   soup object containing a code snippet
+# Purpose
+#   The purpose of the function is to create a code snippet and insert the text, including the copy button.
 def create_code_snippet(code_example, language):
     # Set up dict to hold the properties
     code_snippet_body_attrs = {}
@@ -210,6 +233,13 @@ def create_code_snippet(code_example, language):
     # Return code snippet with text in it
     return code_snippet
 
+# Function cross_reference
+# input
+#   url - relative path of the cross-referenced file
+#   the text for the cross reference (will be overwritten during build)
+# output - xref - a soup object containing the MadCap:xref tag
+# Purpose
+#   This script creates a cross reference with the given url and text and returns the new tag
 def cross_reference(url, text):
     soup_object = BeautifulSoup('', "xml")
     props = {'href': url}
@@ -237,14 +267,28 @@ def create_anchor_tag(url, text):
 
     return a_tag
 
+
+# Function create_p_tag
+# input
+#   text - the text for the p tag
+# output - p_tag - a soup object containing the p tag
+# Purpose
+#   This script creates a p tag with the given text and returns the new tag
 def create_p_tag(text):
     soup_object = BeautifulSoup('', "xml")
     p_tag = soup_object.new_tag('p')
-    #p_tag['id'] =
     p_tag.string = text
 
     return p_tag
 
+# Function create_conditional_text
+# input
+#   conditions - the conditions that should apply to the object. Note, this should match exactly with what's in the
+#                conditions in the project
+#   text - the text that has the condition applied to it
+# output - tag - a soup object containing the MadCap:conditionaltext tag
+# Purpose
+#   This script creates a tag with the given text and conditions and returns the new tag
 def create_conditional_text(conditions, text):
     soup_object = BeautifulSoup('', "xml")
     tag = soup_object.new_tag('MadCap:conditionalText')
@@ -253,7 +297,14 @@ def create_conditional_text(conditions, text):
 
     return tag
 
-
+# Function initialize_toc
+# input
+#   file_name - absolute path of the TOC file
+# output - toc_soup - a soup object containing the empty TOC
+# Purpose
+#   This script will check if a file exists. If it doesn't, then it will create the TOC file. After,
+#   it will store the file into a soup object and clear everything in the 'CatapultToc' tag. It should be empty after.
+#   This is then stored into the file and the soup object is returned
 def initialize_toc(file_name):
     if not check_if_file_exists(file_name):
         create_file(file_name, 'toc', '')
@@ -267,6 +318,10 @@ def initialize_toc(file_name):
 
     return toc_soup
 
+# Function make_readable_text
+# Input - text to make readable
+# Output - string that is more readable
+# purpose - the function converts the data from the weather API into a readable format
 def make_readable_text(text):
     if text == 'temp':
         return 'Temperature'

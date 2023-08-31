@@ -6,42 +6,48 @@
     Link="/Content/Home.htm"
     ReplaceMergeNode="false" />
   <TocEntry
-    Title="Africa">
+    Title="Africa"
+    Link="/Content/Africa/Africa.htm">
     <TocEntry
       Title="Africa"
       Link="/Project/TOCs/Generated_TOCs/Africa.fltoc"
       ReplaceMergeNode="true" />
   </TocEntry>
   <TocEntry
-    Title="Asia">
+    Title="Asia"
+    Link="/Content/Asia/Asia.htm">
     <TocEntry
       Title="Asia"
       Link="/Project/TOCs/Generated_TOCs/Asia.fltoc"
       ReplaceMergeNode="true" />
   </TocEntry>
   <TocEntry
-    Title="Europe">
+    Title="Europe"
+    Link="/Content/Europe/Europe.htm">
     <TocEntry
       Title="Europe"
       Link="/Project/TOCs/Generated_TOCs/Europe.fltoc"
       ReplaceMergeNode="true" />
   </TocEntry>
   <TocEntry
-    Title="North America">
+    Title="North America"
+    Link="/Content/NorthAmerica/NorthAmerica.htm">
     <TocEntry
       Title="NorthAmerica"
       Link="/Project/TOCs/Generated_TOCs/NorthAmerica.fltoc"
       ReplaceMergeNode="true" />
   </TocEntry>
   <TocEntry
-    Title="Oceania">
+    Title="Oceania"
+    Link="/Content/Oceania/Oceania.htm">
     <TocEntry
       Title="Oceania"
       Link="/Project/TOCs/Generated_TOCs/Oceania.fltoc"
       ReplaceMergeNode="true" />
   </TocEntry>
   <TocEntry
-    Title="South America">
+    Title="South America"
+    Link="/Content/SouthAmerica/SouthAmerica.htm">
     <TocEntry
       Title="SouthAmerica"
       Link="/Project/TOCs/Generated_TOCs/SouthAmerica.fltoc"

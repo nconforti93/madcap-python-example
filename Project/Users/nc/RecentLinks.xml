@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RecentLinks>
     <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
-        <Link Value="C:\Users\nc\OneDrive - EXASOL AG\Documents\GitHub\madcap-python-example\Content\Resources\Images\weather_icons\02d.png" />
+        <Link Value="C:\Users\nc\OneDrive - EXASOL AG\Documents\GitHub\madcap-python-example\Content\Resources\Images\africa_globe.png" />
     </Dialog>
-    <Dialog Name="B3.CatapultProjectUserInterfaceKit.InsertSnippetDialog" />
+    <Dialog Name="B3.CatapultProjectUserInterfaceKit.InsertSnippetDialog">
+        <Link Value="C:\Users\nc\OneDrive - EXASOL AG\Documents\GitHub\madcap-python-example\Content\Resources\Snippets\Africa.flsnp" />
+    </Dialog>
     <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog">
         <Link Value="C:\Users\nc\OneDrive - EXASOL AG\Documents\GitHub\madcap-python-example\Content\Africa\Lagos.htm" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="C:\Users\nc\OneDrive - EXASOL AG\Documents\GitHub\madcap-python-example\Content\SouthAmerica\SouthAmerica.htm" />
     </Dialog>
 </RecentLinks>
