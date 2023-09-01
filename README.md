@@ -9,14 +9,18 @@ Finally, I zipped an empty project with no generated topics in there. You can im
 # How to use it
 If you aren't familiar with GitHub, click the green **<> Code** button at the top and you can download it as a zip. For those familiar with GitHub, clone the repository locally.
 
-In order to actually use the weather api, you need to create an account on [OpenWeatherMap](openweathermap.org/api) and subscribe to the One Call API 3.0. The first 1000 calls per day are free, however you will need to enter your credit card. Once you subscribe, click on your username in the top-right corner and go to ["My API Keys"](https://home.openweathermap.org/api_keys). 
+# Prerequisites
+* Install [Python 3](https://www.python.org/downloads/) and install the required packages defined in **Automation/requirements.txt**. You can directly do this with the following command:
 
-The file should look like
+```
+pip install -r /path/to/requirements.txt
+```
+
+* In order to actually use the weather api, you need to create an account on [OpenWeatherMap](openweathermap.org/api) and subscribe to the One Call API 3.0. The first 1000 calls per day are free, however you will need to enter your credit card. Once you subscribe, click on your username in the top-right corner and go to ["My API Keys"](https://home.openweathermap.org/api_keys). Copy the string listed there and save it to a file called "api_secrets.py" in the **Automation** folder. The file should look like
 ```
 openweather_api_key = 'my_key_here'
 ```
-
-Copy the string listed there and save it to a file called "api_secrets.py" in the **Automation** folder. To avoid my API key being used (and potentially being charged for it), this file is not synced to GitHub! 
+To avoid my API key being used (and potentially being charged for it), this file is not synced to GitHub! 
 
 # Help
 If you need any help, feel free to reach out to me on GitHub (issues) or via email (found at the bottom of the presentation!)
