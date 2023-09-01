@@ -10,7 +10,7 @@
   ShowMadCapBacklink="true"
   MasterToc="/Project/TOCs/TOC.fltoc"
   ConditionTagExpression="include[Units.Imperial], exclude[Units.Metric]"
-  ContentInclusionType="Referenced">
+  ContentInclusionType="Toc">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
