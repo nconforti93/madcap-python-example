@@ -9,11 +9,13 @@
   DefaultUrl="/Content/Home.htm"
   ShowMadCapBacklink="true"
   MasterToc="/Project/TOCs/TOC.fltoc"
-  ConditionTagExpression="include[Units.Metric], exclude[Units.Imperial]">
+  ConditionTagExpression="include[Units.Metric], exclude[Units.Imperial]"
+  ContentInclusionType="Referenced">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
-  <PreBuild>python3 $(ProjectDirectory)\Automation\main.py</PreBuild>
+  <PreBuild>python3 $(ProjectDirectory)\Automation\main.py
+python3 $(ProjectDirectory)\Automation\github_commit.py -u nconforti@outlook.com</PreBuild>
 </CatapultTarget>
