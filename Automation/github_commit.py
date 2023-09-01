@@ -63,7 +63,7 @@ def commit_to_github():
 
         # Define what the remote repository is
         origin = repo.remote(name='origin')
-        origin.set_url(new_url = f"https://{user}:{token}@github.com/exasol/docs/")
+        origin.set_url(new_url = f"https://{user}:{token}@{github_repo}")
         print("Pushing changes to Github")
 
         # Push the changes to remote
