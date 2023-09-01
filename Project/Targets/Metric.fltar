@@ -17,5 +17,5 @@
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
   <PreBuild>python3 $(ProjectDirectory)\Automation\main.py
-python3 $(ProjectDirectory)\Automation\github_commit.py -u nconforti@outlook.com</PreBuild>
+python3 $(ProjectDirectory)\Automation\github_commit.py -u nconforti93</PreBuild>
 </CatapultTarget>

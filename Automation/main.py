@@ -9,7 +9,7 @@ import pycountry_convert as pc
 # Variables
 
 # Number of cities we want to get the weather for (max 100 because I didn't implement offsets)
-number_of_cities = str(100)
+number_of_cities = str(10)
 
 # API Url we will connect to get the largest cities
 geonames_api = \
