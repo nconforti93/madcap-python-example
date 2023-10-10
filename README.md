@@ -22,5 +22,10 @@ openweather_api_key = 'my_key_here'
 ```
 To avoid my API key being used (and potentially being charged for it), this file is not synced to GitHub! 
 
+If you want to also commit directly to GitHub, you can add your GitHub PAT to this file as well:
+```
+openweather_api_key = 'my_key_here'
+github_pat = 'my_key_here'
+```
 # Help
 If you need any help, feel free to reach out to me on GitHub (issues) or via email (found at the bottom of the presentation!)
