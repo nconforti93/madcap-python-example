@@ -9,8 +9,7 @@
   DefaultUrl="/Content/Home.htm"
   ShowMadCapBacklink="true"
   MasterToc="/Project/TOCs/TOC.fltoc"
-  ConditionTagExpression="include[Units.Imperial], exclude[Units.Metric]"
-  ContentInclusionType="Toc">
+  ConditionTagExpression="include[Units.Imperial], exclude[Units.Metric]">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
