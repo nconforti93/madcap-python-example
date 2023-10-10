@@ -19,7 +19,7 @@ import api_secrets
 # Variables to be defined
 # gets the absolute path of the current file and goes one directory up to be at the top level
 root_dir = os.path.realpath(os.path.join(os.path.dirname(__file__), '..')) 
-github_repo = 'github.com/nconforti93/madcap-python-example/
+github_repo = 'github.com/nconforti93/madcap-python-example/'
 
 # Function safe_exit
 # input: message - message that should be printed when exiting
@@ -63,7 +63,7 @@ def commit_to_github():
 
         # Define what the remote repository is
         origin = repo.remote(name='origin')
-        origin.set_url(new_url = f"https://{user}:{token}@github.com/exasol/docs/")
+        origin.set_url(new_url = f"https://{user}:{token}@{github_repo}")
         print("Pushing changes to Github")
 
         # Push the changes to remote
@@ -81,7 +81,7 @@ def commit_to_github():
         #    "test",  # head_branch, "from" branch
         #    "main",  # base_branch, "to" branch
         #    token,  # git_token
-        )
+        # )
     else:
         print("No changes discovered, nothing to push to Github")
 

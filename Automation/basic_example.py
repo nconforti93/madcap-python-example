@@ -13,8 +13,7 @@ if __name__ == "__main__":
         example = BeautifulSoup(file, 'xml')
 
 
-    #print(example.prettify())
-   
+    print(example.prettify())
 
 
     # Let's search for objects now
@@ -37,16 +36,16 @@ if __name__ == "__main__":
     for a_tag in a_tags:
 
         #Access attributes using brackets
-        print(a_tag.string)
+        print(a_tag['href'])
 
 
     # This even works with webpages!
-    #madcap_page = 'https://www.madcapsoftware.com/madworld-conferences/madworld-2023'
-    #madcap_soup = BeautifulSoup(requests.get(madcap_page).content, 'html')
+    madcap_page = 'https://www.madcapsoftware.com/madworld-conferences/madworld-2023'
+    madcap_soup = BeautifulSoup(requests.get(madcap_page).content, 'html')
 
 
-    #for tag in madcap_soup.findAll('a'):
-    #    print(tag['href'])
+    for tag in madcap_soup.findAll('a'):
+        print(tag['href'])
 
     # Let's go back to our mockup page though and make some changes
     # Improve our h1
@@ -57,15 +56,15 @@ if __name__ == "__main__":
     print(h1)
     # Results: <h1>This ia a better h1!</h1>
 
-
     # Let's also change our image to a frowny face
     picture = example.find('img')
     print(picture)
     # Results: <img src="Resources/Images/example/smiley_face.jpg"/>
-    
     picture['src'] = 'Resources/Images/example/frowny_face.jpg'
     print(picture)
     # Results: <img src="Resources/Images/example/frowny_face.jpg"/>
+
+
 
     # Let's clear out the p tag now, we don't need it!
 
@@ -98,7 +97,10 @@ if __name__ == "__main__":
         file.write(str(example).replace('\r\n', '\n'))
 
 
+"""
 
+
+"""
 
 
 
