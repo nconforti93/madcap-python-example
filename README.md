@@ -2,7 +2,7 @@
 Welcome to my GitHub repository. I hope you enjoyed my presentation at MadWorld 2023 on automation. 
 
 # What is it
-The repository contains the folder and Flare projects that we went through together looking at weather data. In the Content folder, you will already see 100 topics created automatically by the script for your reference. The Automation folder contains the Python scripts needed to run the automation. 
+The repository contains the folder and Flare projects that we went through together looking at weather data. In the Content folder, you will already see 10 topics created automatically by the script for your reference. The Automation folder contains the Python scripts needed to run the automation. 
 
 Finally, I zipped an empty project with no generated topics in there. You can import this Zipped Flare project and start from scratch if you like.
 
