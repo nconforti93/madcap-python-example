@@ -2,9 +2,6 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-# Full path of the mockup file
-file_name = os.path.realpath(os.path.join(os.path.dirname(__file__), '..')) + '\\Content\\basic_example.htm'
-
 if __name__ == "__main__":
 
     # Reading xml file and store into soup object
@@ -15,7 +12,7 @@ if __name__ == "__main__":
 
     print(example.prettify())
 
-"""
+
     # Let's search for objects now
 
     h1 = example.find('h1')
@@ -40,12 +37,12 @@ if __name__ == "__main__":
 
 
     # This even works with webpages!
-    madcap_page = 'https://www.madcapsoftware.com/madworld-conferences/madworld-2023'
-    madcap_soup = BeautifulSoup(requests.get(madcap_page).content, 'html')
+    #madcap_page = 'https://www.madcapsoftware.com/madworld-conferences/madworld-2023'
+    #madcap_soup = BeautifulSoup(requests.get(madcap_page).content, 'html')
 
 
-    for tag in madcap_soup.findAll('a'):
-        print(tag['href'])
+    #for tag in madcap_soup.findAll('a'):
+    #    print(tag['href'])
 
     # Let's go back to our mockup page though and make some changes
     # Improve our h1
@@ -97,7 +94,7 @@ if __name__ == "__main__":
         file.write(str(example).replace('\r\n', '\n'))
 
 
-
+"""
 
 """
 

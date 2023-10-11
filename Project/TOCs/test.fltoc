@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=Heading.Level1%]"
+    Link="/Content/mockup.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Home.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+</CatapultToc>
