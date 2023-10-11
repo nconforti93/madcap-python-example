@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     print(example.prettify())
 
-
+"""
     # Let's search for objects now
 
     h1 = example.find('h1')
@@ -97,7 +97,6 @@ if __name__ == "__main__":
         file.write(str(example).replace('\r\n', '\n'))
 
 
-"""
 
 
 """
